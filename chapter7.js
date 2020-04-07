@@ -101,4 +101,7 @@ let first = new villagestate(
     return new villagestate("Post Office", parcels);
   };
 
+
+  
+
   runRobot(villagestate.random(), randomRobot);
