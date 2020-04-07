@@ -48,11 +48,7 @@ async function fetchusers(){
 
 }
 fetchusers()
-
-
-
-
-    
+   
 //  promise.all
 // const promise1 = Promise.resolve('hello world')
 // const promise2 = 10
