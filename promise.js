@@ -41,17 +41,17 @@ function createPost(post){
 //  init()
 
 //  async await with fetch
-async function fetchusers(){
-    const res = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = await res.json()
-    console.log(data)
+// async function fetchusers(){
+//     const res = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data = await res.json()
+//     console.log(data)
 
-}
-fetchusers()
+// }
+// fetchusers()
    
 //  promise.all
-// const promise1 = Promise.resolve('hello world')
-// const promise2 = 10
+const promise1 = Promise.resolve('hello world')
+const promise2 = 10
 // const promise3 = new Promise((resolve,reject) =>{
 //     // setTimeout(resolve,2000,'goodbye')
 //     resolve('goodbye')
@@ -59,9 +59,16 @@ fetchusers()
    
 // })
 
-// const promise4 = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
-// Promise.all([promise1,promise2,promise3,promise4])
-// .then(((values) => console.log(values)))
-// .catch(err => console.log(err))
+const promise4 = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
+const promise3 = new Promise((resolve,reject) =>{
+    // setTimeout(resolve,2000,'goodbye')
+    // resolve('goodbye')
+    reject('ass hole')
+   
+})
+Promise.all([promise1,promise2,promise3,promise4])
+.then(((values) => console.log(values)))
+.catch(err => console.log(err))
+.then(console.log('achuy'),()=> console.log('achuy reddy'))
 
 
