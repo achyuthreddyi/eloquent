@@ -39,7 +39,7 @@ function createPost(post){
 
 // }
 //  init()
-
+1111
 //  async await with fetch
 // async function fetchusers(){
 //     const res = await fetch('https://jsonplaceholder.typicode.com/users')
